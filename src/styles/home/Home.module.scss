@@ -1,5 +1,63 @@
 @import "../../../node_modules/@blueprintjs/core/lib/scss/variables.scss";
 
 .homeApp {
-  border: 1px solid $blue3;
+  background-color: $turquoise2;
+  display: flex;
+  flex-direction: column;
+  padding: 10%;
+
+  &.mobile {
+    .logo {
+      max-width: 100%;
+    }
+
+    .linkImage {
+      width: 20px;
+      height: 20px;
+      margin: 0 10px;
+    }
+  }
+}
+
+.logoContainer {
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo {
+  max-width: 70%;
+}
+
+.bottomContainer {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkContainer {
+  width: 40%;
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.linkImage {
+  width: 25px;
+  height: 25px;
+  margin: 0 5px;
+  flex: 0 0 auto;
+  transition: all 0.2s ease-in-out;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
 }
