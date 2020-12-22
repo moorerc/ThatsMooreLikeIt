@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import styles from "./App.module.scss";
 import { Home } from "./home/Home";
 import { AboutMe } from "./about/AboutMe";
+import { Trivia } from "./trivia/Trivia";
 
 class App extends React.Component {
   render() {
@@ -12,6 +13,9 @@ class App extends React.Component {
           <Switch>
             <Route path="/about">
               <AboutMe />
+            </Route>
+            <Route path="/trivia">
+              <Trivia />
             </Route>
             <Route path="/">
               <Home />

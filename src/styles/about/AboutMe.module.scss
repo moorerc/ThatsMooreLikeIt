@@ -1,5 +1,13 @@
 @import "../../../node_modules/@blueprintjs/core/lib/scss/variables.scss";
 
 .aboutMePage {
-  border: 1px solid $green3;
+  display: flex;
+  flex-direction: row;
+}
+
+.pageContent {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

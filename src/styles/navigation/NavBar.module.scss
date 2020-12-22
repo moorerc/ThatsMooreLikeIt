@@ -1,0 +1,70 @@
+@import "../../../node_modules/@blueprintjs/core/lib/scss/variables.scss";
+
+.navBarContainer {
+  border-right: 2px solid $light-gray5;
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 80px;
+  padding-bottom: 32px;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex: 0 0 auto;
+
+  a {
+    text-align: center;
+  }
+
+  .logo {
+    max-width: 80%;
+  }
+}
+
+.internalLinkContainer {
+  flex: 1 1 auto;
+}
+
+.externalLinkContainer {
+  flex: 0 0 auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.attributionContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  font-size: 11px;
+
+  .copyright {
+    color: $gray1;
+    margin-right: 5px;
+  }
+
+  .author {
+    font-weight: 700;
+  }
+}
+
+.linkImage {
+  width: 12px;
+  height: 12px;
+  margin: 0 5px;
+  flex: 0 0 auto;
+  transition: all 0.2s ease-in-out;
+  filter: invert(1);
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transform: scale(1.2);
+  }
+}

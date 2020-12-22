@@ -4,6 +4,9 @@ import pageStyles from "../styles/shared/Page.module.scss";
 import classNames from "classnames";
 import { SOCIAL_MEDIA_LINKS } from "./SocialMediaLinks";
 import { isMobileOnly } from "react-device-detect";
+import { Button, Colors, Icon } from "@blueprintjs/core";
+import { IconNames } from "@blueprintjs/icons";
+import { Link } from "react-router-dom";
 
 export class Home extends React.PureComponent {
   render() {
@@ -21,6 +24,16 @@ export class Home extends React.PureComponent {
           />
         </div>
         <div className={homeStyles.bottomContainer}>
+          <Link className={homeStyles.enterButton} to="/about">
+            <Button
+              minimal={true}
+              text="Check it out"
+              large={true}
+              rightIcon={
+                <Icon icon={IconNames.CHEVRON_RIGHT} color={Colors.WHITE} />
+              }
+            />
+          </Link>
           <div className={homeStyles.linkContainer}>
             {SOCIAL_MEDIA_LINKS.map(link => (
               <img

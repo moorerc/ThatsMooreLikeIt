@@ -61,3 +61,14 @@
     transform: scale(1.2);
   }
 }
+
+:global(.bp3-button-text) {
+  color: $white;
+  font-family: "Lato";
+}
+
+.enterButton {
+  &:hover {
+    text-decoration: none;
+  }
+}
